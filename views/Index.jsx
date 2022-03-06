@@ -15,13 +15,13 @@ class Index extends React.Component {
     <h1>See All The Pokemon!</h1>
     <ul>
                     {pokemon.map((poke, i)=>{
+                        const pokename = poke.name.charAt(0).toUpperCase() + poke.name.slice(1)
                         return(
                             <li>
                                 
                                 <a href = {`/pokemon/${i}`}>
-                                    {poke.name}
-                                </a>{' '}
-                                 {poke.img}<br />
+                                    {pokename}
+                                </a>
                                
                                 <br />
                             </li>
