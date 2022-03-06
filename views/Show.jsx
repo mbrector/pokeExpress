@@ -12,12 +12,12 @@ class Show extends React.Component {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon</title>
 </head>
-<body>
-    <h1>Gotta Catch 'Em All</h1>
-    <h2>{pokename}</h2>
+<body style = {{backgroundColor: 'aqua'}}>
+    <h1><img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb6GyR3nFisGYmWt7d2wbxD7HgldFntXTnnw&usqp=CAU'></img></h1>
+    <h2 style = {{color: 'red'}}>{pokename}</h2>
     <img src = {`${pokemon.img}.jpg`}></img>
     <br />
-    <a href = '/pokemon'>back</a>
+    <a style = {{color: 'red'}} href = '/pokemon'>back</a>
 </body>
 </html>
         )
