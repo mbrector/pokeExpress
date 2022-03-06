@@ -11,27 +11,26 @@ class Index extends React.Component {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
-<body style = {{backgroundColor: 'lightgreen'}}>
-    <h1 style = {{color: 'purple'}}>See All The Pokemon!</h1>
+<body style = {{backgroundColor: 'aquamarine'}}>
+    <h1 style = {{color: 'blueviolet'}}>See All The Pokemon!</h1>
     <ul>
-                    {pokemon.map((poke, i)=>{
-                        const pokename = poke.name.charAt(0).toUpperCase() + poke.name.slice(1)
-                        return(
-                            <li>
-                                
-                                <a href = {`/pokemon/${i}`}>
-                                    {pokename}
-                                </a>
-                               
-                                <br />
-                            </li>
-                )
-            })}
+    {pokemon.map((poke, i)=>{
+        const pokename = poke.name.charAt(0).toUpperCase() + poke.name.slice(1)
+        return(
+        <li>
+            <a style = {{color: 'blueviolet', fontSize: '25px'}} href = {`/pokemon/${i}`}>
+            {pokename}
+            </a>
+            <br />
+            <br />
+            <br />
+        </li>
+        )})}
     </ul>
     
 </body>
 </html>
-        )
+)
 }
 }
 
